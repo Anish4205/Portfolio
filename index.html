@@ -64,6 +64,9 @@
       flex-direction: column;
       align-self: center;
       padding: 15px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
     }
 
     .profile > span {
@@ -105,6 +108,55 @@
       color: aliceblue;
     }
 
+    .hire-button {
+      width: 250px;
+      height: 35px;
+      justify-items: center;
+      font-size: large;
+      border-radius: 12px;
+      padding: 5px;
+      background-image: linear-gradient(to right, rgb(223, 203, 90) 0%, rgb(242, 208, 15)  51%, rgb(236, 233, 11)  100%);
+      margin: 10px;
+    }
+
+    .hire-button:hover {
+      background-position: right center; /* change the direction of the change here */
+      transition: 0.5s;
+      color: #fff;
+      width: 260px;
+      height: 40px;
+      text-decoration: none;
+    }
+
+    .header {
+        background-color: rgba(243, 235, 16, 0.927);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 6vh;
+        z-index: 10000;
+        color: black;
+    }
+
+    .navbar {
+        display: flex;
+        width: 20vw;
+        float: right;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar a {
+      padding: 6px;
+      margin: 3px;
+    }
+
+    header a:hover {
+      background-color: rgba(15, 14, 6, 0.409);
+      color: white;
+      border-radius: 5px 10px 7px;
+    }
+
     @media screen and (max-width: 420px) {
       
       .profile > span, p {
@@ -125,13 +177,24 @@
         width: 10rem;
         height: 10rem;
       }
+      
     }
      
   </style>
   <body>
     
-    
+
     <main>
+
+      <header class="header">
+        
+        <nav class="navbar">
+          <a>About</a>
+          <a>Projects</a>
+          <a>Skills</a>
+          <a>Contacts</a>
+        </nav>
+      </header>
 
       <aside>
         <menu>
@@ -141,7 +204,7 @@
           <item>Contact</item>
         </menu>
   
-      </aside>
+      </aside>      
 
       <div class="main-content">
 
@@ -154,11 +217,11 @@
                experience in creating large scale enterprise web applications
               with modern user interfaces and robust spring boot backend to serve data
             </p>
-            <button class="hire-button">Hire Me</button>
+            <button class="hire-button">Get in Touch!</button>
           </div>
 
           <div class="face">
-            <img src="/face-profile.jpg" class="face-image" />
+            <img src="Anish4205/Portfolio/images/face.jpg" class="face-image" alt="photo"/>
           </div>
         </section>
 
